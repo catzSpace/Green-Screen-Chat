@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&family=Signika+Negative&display=swap');
+*{
+    font-family:'Nunito', sans-serif;
+}
+
+body{
+    background-color: green;
+}
+
+.text_space{
+    margin-top: 5em;
+    width: 15em;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+p{
+    width: fit-content;
+    height: auto;
+    max-width: 15em;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border-radius: 1vh;
+    color: black;
+    display: block; /*NO UTILIZAR DISPLAY FLEX EN ESTA SHIT!!!!!*/
+    align-items: center;
+    background-color: white;
+    margin-left: 2em;
+}
+
+.an{
+    position: relative;
+    animation-duration: .4s;
+    animation-name: apar;
+}
+
+
+@keyframes apar{
+    0% {opacity: 0%; bottom: -50px; }
+    10% {opacity: 10%; bottom: -45px;}
+    20% {opacity: 20%; bottom: -40px;}
+    30% {opacity: 30%; bottom: -35px;}
+    40% {opacity: 40%; bottom: -30px;}
+    50% {opacity: 50%; bottom: -25px;}
+    60% {opacity: 60%; bottom: -20px;}
+    70% {opacity: 70%; bottom: -15px;}
+    80% {opacity: 80%; bottom: -10px;}
+    90% {opacity: 90%; bottom: -5px;}
+    100% {opacity: 100%; bottom: 0px;}
+}
