@@ -16,9 +16,17 @@ function enviar_texto(){
     else{
         contenedor.appendChild(mensaje);
         mensaje.classList.add('an');
-    }
-    
-}
+        
+        setTimeout(() => {
+            mensaje.classList.add('des');
+            mensaje.classList.remove('an');
+            }, 2000);
 
+        setTimeout(() => {
+            mensaje.classList.remove('des');
+            mensaje.classList.add('inv');
+        }, 5000)
+        } 
+}
 
 //orgulloso :D
